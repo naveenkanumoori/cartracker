@@ -38,4 +38,9 @@ public class ReadingsController {
         return readingsService.getAlerts(key);
     }
 
+    @RequestMapping(method=RequestMethod.GET, value="/{vin}/{time}/{unit}")
+    public List<Reading> getReadingsByVinWithTimeDuration(@PathVariable String vin, @PathVariable int time, @PathVariable String unit){
+        return this.readingsService.getReadingsByVinWithTimeDuration(vin, time, unit);
+    }
+
 }

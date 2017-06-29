@@ -48,4 +48,9 @@ public class ReadingsServiceImpl implements ReadingsService {
     public List<VehicleReading> getAlerts(String key) {
         return readingsRepository.getAlerts(key);
     }
+
+    @Override
+    public List<Reading> getReadingsByVinWithTimeDuration(String vin, int time, String unit) {
+        return readingsRepository.getReadingsByVinWithTimeDuration(vin, time, unit);
+    }
 }

@@ -13,4 +13,5 @@ public interface ReadingsRepository {
     public List<Reading> findByVin(String vin);
     public Reading createReading(Reading reading);
     public List<VehicleReading> getAlerts(String key);
+    public List<Reading> getReadingsByVinWithTimeDuration(String vin, int time, String unit);
 }

@@ -54,4 +54,10 @@ public class ReadingsRepositoryImpl implements ReadingsRepository {
         }
         return query.getResultList();
     }
+
+    @Override
+    public List<Reading> getReadingsByVinWithTimeDuration(String vin, int time, String unit) {
+        String query = "SELECT * FROM Reading WHERE timestamp > NOW() - INTERVAL "+time+" "+unit;
+        return em.createNativeQuery(query, Reading.class).getResultList();
+    }
 }

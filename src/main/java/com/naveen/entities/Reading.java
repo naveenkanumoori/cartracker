@@ -16,7 +16,7 @@ import java.util.UUID;
 })
 //select * from (Reading r LEFT JOIN Vehicle v ON r.vin = v.vin) LEFT JOIN Tire t ON Reading.tires_id = Tire.id
 @Entity
-public class Reading {
+public class  Reading {
 
     @Id
     private String id;
