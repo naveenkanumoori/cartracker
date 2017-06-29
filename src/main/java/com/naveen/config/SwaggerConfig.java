@@ -21,7 +21,7 @@ public class SwaggerConfig {
     }
     private ApiInfo apiInfo(){
         Contact contact = new Contact("Naveen","www.naveen.com","kanumoorinaveen@gmail.com");
-        ApiInfo info = new ApiInfo("City Weather API", "A Simple API to track details of vehicles", "1.0", "www.google.com", contact , "MIT", "http://www.mit.com");
+        ApiInfo info = new ApiInfo("Car Tracker API", "A Simple API to track details of vehicles, their conditions and geoloactions", "1.0", "www.google.com", contact , "MIT", "http://www.mit.com");
         return info;
     }
 }
