@@ -2,6 +2,8 @@ package com.naveen.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import javax.servlet.Filter;
+
 /**
  * Created by naveenkumar on 6/17/17.
  */
@@ -26,4 +28,5 @@ public class Servletinitializer extends AbstractAnnotationConfigDispatcherServle
         return new String[]{"/*"};
 
     }
+
 }
